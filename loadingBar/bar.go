@@ -27,8 +27,8 @@ func main() {
 
 	// this for loop simulates random work on a load of known size
 	for {
-		z := rand.Intn(10)
-		if z == 7 { // when a rand is hit
+		z := rand.Intn(6)
+		if z == 4 { // when a rand is hit
 			counter++    // a counter increments
 			sigKill <- 1 // and a value is sent over the chanel
 		}
